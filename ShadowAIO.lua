@@ -268,19 +268,19 @@ local Icons = {
     }
 
 function MasterYi:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowMasterYi", name = "Shadow MasterYi", leftIcon = Icons["MasterYiIcon"]})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowMasterYi", name = "Shadow MasterYi"})
 
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "user", name = "Use [R] in combo", value = true, leftIcon = Icons.R})
-    self.shadowMenu.combo:MenuElement({id = "userrange", name = "Use [R] only if out of [Q] range?", value = true, leftIcon = Icons.R})
+    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "user", name = "Use [R] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "userrange", name = "Use [R] only if out of [Q] range?", value = true})
 
     -- AUTO W --
     self.shadowMenu:MenuElement({type = MENU, id = "autow", name = "Auto W"})
-    self.shadowMenu.autow:MenuElement({id = "usew", name = "Use [W] automatically", value = true, leftIcon = Icons.W})
+    self.shadowMenu.autow:MenuElement({id = "usew", name = "Use [W] automatically", value = true})
     self.shadowMenu.autow:MenuElement({id = "usewhealth", name = "Min health to auto [W]", value = 30, min = 0, max = 100, identifier = "%"})
 
     -- JUNGLE CLEAR --
@@ -460,23 +460,23 @@ local Icons = {
     }
 
 function LeeSin:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowLeeSin", name = "Shadow LeeSin", leftIcon = Icons["LeeSinIcon"]})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowLeeSin", name = "Shadow LeeSin"})
 
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "userinsec", name = "Use [R] in combo", value = true, leftIcon = Icons.R})
+    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "userinsec", name = "Use [R] in combo", value = true})
 
     -- AUTO W --
     self.shadowMenu:MenuElement({type = MENU, id = "autow", name = "Auto W"})
-    self.shadowMenu.autow:MenuElement({id = "usew", name = "Use [W] automatically", value = true, leftIcon = Icons.W})
+    self.shadowMenu.autow:MenuElement({id = "usew", name = "Use [W] automatically", value = true})
     self.shadowMenu.autow:MenuElement({id = "usewhealth", name = "Min health to auto [W]", value = 30, min = 0, max = 100, identifier = "%"})
 
     -- AUTO R --
     self.shadowMenu:MenuElement({type = MENU, id = "autor", name = "Auto R"})
-    self.shadowMenu.autor:MenuElement({id = "user", name = "Use [R] automatically", value = true, leftIcon = Icons.W})
+    self.shadowMenu.autor:MenuElement({id = "user", name = "Use [R] automatically", value = true})
     self.shadowMenu.autor:MenuElement({id = "useronks", name = "Use [R] on killable", value = true})
     self.shadowMenu.autor:MenuElement({id = "userpanic", name = "Use [R] on panic", value = true})
     self.shadowMenu.autor:MenuElement({id = "userpanichealth", name = "Min health to auto [R] on panic", value = 30, min = 0, max = 100, identifier = "%"})
@@ -725,7 +725,7 @@ local Icons = {
     }
 
 function Elise:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowElise", name = "Shadow Elise", leftIcon = Icons["EliseIcon"]})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowElise", name = "Shadow Elise"})
 
 
     -- COMBO --
@@ -749,7 +749,7 @@ function Elise:LoadMenu()
 
      -- JUNGLE KILLSTEAL --
     self.shadowMenu:MenuElement({type = MENU, id = "junglekillsteal", name = "Jungle Steal"})
-    self.shadowMenu.junglekillsteal:MenuElement({id = "W", name = "Use W in Jungle Steal", value = true, leftIcon = Icons.W})
+    self.shadowMenu.junglekillsteal:MenuElement({id = "W", name = "Use W in Jungle Steal", value = true})
 
     -- DRAWING SETTINGS --
     self.shadowMenu:MenuElement({type = MENU, id = "drawings", name = "Drawing Settings"})
@@ -1049,20 +1049,20 @@ local Icons = {
     }
 
 function DrMundo:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowDrMundo", name = "Shadow DrMundo", leftIcon = Icons["DrMundoIcon"]})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowDrMundo", name = "Shadow DrMundo"})
 
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "usew", name = "Use [W] in combo", value = true, leftIcon = Icons.W})
-    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "user", name = "Use [R] in combo", value = true, leftIcon = Icons.R})
+    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "usew", name = "Use [W] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "user", name = "Use [R] in combo", value = true})
     self.shadowMenu.combo:MenuElement({id = "userhp", name = "Minimum HP to use [R]", value = 30, min = 0, max = 100, identifier = "%"})
 
     -- AUTO Q --
     self.shadowMenu:MenuElement({type = MENU, id = "autoq", name = "Auto Q"})
-    self.shadowMenu.autoq:MenuElement({id = "useq", name = "Use [Q] automatically", value = true, leftIcon = Icons.Q})
+    self.shadowMenu.autoq:MenuElement({id = "useq", name = "Use [Q] automatically", value = true})
     self.shadowMenu.autoq:MenuElement({id = "useqmanual", name = "Use [Q] on keydown", key = string.byte("T"), value = true})
 
 
@@ -1074,7 +1074,7 @@ function DrMundo:LoadMenu()
 
     -- AUTO R --
     self.shadowMenu:MenuElement({type = MENU, id = "autor", name = "Auto R Settings"})
-    self.shadowMenu.autor:MenuElement({id = "useautor", name = "Use auto [R] ?", value = true, leftIcon = Icons.R})
+    self.shadowMenu.autor:MenuElement({id = "useautor", name = "Use auto [R] ?", value = true})
     self.shadowMenu.autor:MenuElement({id = "autorhp", name = "Activate R when at what % HP", value = 30, min = 0, max = 100, identifier = "%"})
 
     -- DRAWING SETTINGS --
@@ -1085,15 +1085,15 @@ function DrMundo:LoadMenu()
     -- SUMMONER SETTINGS --
     self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
     if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
     elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
     end
 
     if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
     elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
     end
 
 end
@@ -1300,14 +1300,14 @@ local Icons = {
     }
 
 function Nocturne:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowNocturne", name = "Shadow Nocturne", leftIcon = Icons["NocturneIcon"]})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowNocturne", name = "Shadow Nocturne"})
 
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "user", name = "Use [R] in combo", value = true, leftIcon = Icons.R})
+    self.shadowMenu.combo:MenuElement({id = "useq", name = "Use [Q] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "usee", name = "Use [E] in combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "user", name = "Use [R] in combo", value = true})
 
     -- JUNGLE CLEAR --
     self.shadowMenu:MenuElement({type = MENU, id = "jungleclear", name = "Jungle Clear"})
@@ -1489,19 +1489,19 @@ local Icons = {
     }
 
 function Jinx:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowJinx", name = "Shadow Jinx", leftIcon = Icons["JinxIcon"]})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowJinx", name = "Shadow Jinx"})
 
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "Q", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "W", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-    self.shadowMenu.combo:MenuElement({id = "E", name = "Use [E] in  Combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "EONCC", name = "Auto Use [E] on CC Targets", value = true, leftIcon = Icons.E})
+    self.shadowMenu.combo:MenuElement({id = "Q", name = "Use [Q] in Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "W", name = "Use [W] in Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "E", name = "Use [E] in  Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "EONCC", name = "Auto Use [E] on CC Targets", value = true})
 
         -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "clear", name = "Lane Clear"})
-    self.shadowMenu.clear:MenuElement({id = "Q", name = "Use [Q] in LaneClear", value = true, leftIcon = Icons.Q})
+    self.shadowMenu.clear:MenuElement({id = "Q", name = "Use [Q] in LaneClear", value = true})
 
 
     -- R SETTINGS --
@@ -1512,18 +1512,18 @@ function Jinx:LoadMenu()
 
     -- KILL STEAL --
     self.shadowMenu:MenuElement({type = MENU, id = "killsteal", name = "Kill Steal"})
-    self.shadowMenu.killsteal:MenuElement({id = "killstealw", name = "Kill steal with [W]", value = true, leftIcon = Icons.W})
-    self.shadowMenu.killsteal:MenuElement({id = "killstealr", name = "Kill steal with [R]", value = true, leftIcon = Icons.R})
+    self.shadowMenu.killsteal:MenuElement({id = "killstealw", name = "Kill steal with [W]", value = true})
+    self.shadowMenu.killsteal:MenuElement({id = "killstealr", name = "Kill steal with [R]", value = true})
     self.shadowMenu.killsteal:MenuElement({id = "killstealrangemax", name = "Max Distance willing to use R at", value = 0, min = 0, max = 20000})
 
     -- DRAWINGS --
     self.shadowMenu:MenuElement({type = MENU, id = "Drawing", name = "Draw Settings"})
-    self.shadowMenu.Drawing:MenuElement({id = "draww", name = "Draw [W] Range", value = true, leftIcon = Icons.W})
-    self.shadowMenu.Drawing:MenuElement({id = "drawe", name = "Draw [E] Range", value = true, leftIcon = Icons.E})
-    self.shadowMenu.Drawing:MenuElement({id = "drawr", name = "Draw [R] Range", value = true, leftIcon = Icons.R})
-    self.shadowMenu.Drawing:MenuElement({id = "drawrkill", name = "Draw [R] Killable Text", value = true, leftIcon = Icons.R})
-    self.shadowMenu.Drawing:MenuElement({id = "drawrtoogle", name = "Draw [R] use toogle", value = true, leftIcon = Icons.R})
-    self.shadowMenu.Drawing:MenuElement({id = "rdebug", name = "Draw [R] for debug", value = true, leftIcon = Icons.R})
+    self.shadowMenu.Drawing:MenuElement({id = "draww", name = "Draw [W] Range", value = true})
+    self.shadowMenu.Drawing:MenuElement({id = "drawe", name = "Draw [E] Range", value = true})
+    self.shadowMenu.Drawing:MenuElement({id = "drawr", name = "Draw [R] Range", value = true})
+    self.shadowMenu.Drawing:MenuElement({id = "drawrkill", name = "Draw [R] Killable Text", value = true})
+    self.shadowMenu.Drawing:MenuElement({id = "drawrtoogle", name = "Draw [R] use toogle", value = true})
+    self.shadowMenu.Drawing:MenuElement({id = "rdebug", name = "Draw [R] for debug", value = true})
 
 
 end
@@ -1776,14 +1776,14 @@ end
 
 
         function Blitzcrank:LoadMenu()
-            self.shadowMenu = MenuElement({type = MENU, id = "shadowBlitzcrank", name = "Shadow Blitzcrank", leftIcon = Icons.BlitzIcon})
+            self.shadowMenu = MenuElement({type = MENU, id = "shadowBlitzcrank", name = "Shadow Blitzcrank"})
 
             -- COMBO --
             self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-            self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-            self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true, leftIcon = Icons.W})
-            self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
-            self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true, leftIcon = Icons.R})
+            self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+            self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true})
+            self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
+            self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
 
             -- AUTO R --
             self.shadowMenu:MenuElement({type = MENU, id = "autor", name = "Auto R Settings"})
@@ -1794,16 +1794,16 @@ end
             self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 
             if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-                self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+                self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
             elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-                self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+                self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
             end
 
             
             if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-                self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+                self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
             elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-                self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+                self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
             end
 
         end
@@ -1985,16 +1985,16 @@ local Icons = {
 
 
 function Nami:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowNami", name = "Shadow Nami", leftIcon = Icons.NamiIcon})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowNami", name = "Shadow Nami"})
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "Q", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "W", name = "Use [W] on Ally", value = true, leftIcon = Icons.W})
-    self.shadowMenu.combo:MenuElement({id = "wonAlly", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-    self.shadowMenu.combo:MenuElement({id = "E", name = "Use [E] in  Combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "eonAlly", name = "Use [E] on Ally", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "R", name = "Use [R] in  Combo", value = true, leftIcon = Icons.R})
+    self.shadowMenu.combo:MenuElement({id = "Q", name = "Use [Q] in Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "W", name = "Use [W] on Ally", value = true})
+    self.shadowMenu.combo:MenuElement({id = "wonAlly", name = "Use [W] in Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "E", name = "Use [E] in  Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "eonAlly", name = "Use [E] on Ally", value = true})
+    self.shadowMenu.combo:MenuElement({id = "R", name = "Use [R] in  Combo", value = true})
 
     -- AUTO R --
     self.shadowMenu:MenuElement({type = MENU, id = "autor", name = "Auto R Settings"})
@@ -2005,16 +2005,16 @@ function Nami:LoadMenu()
     self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 
     if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
     elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
     end
 
     
     if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
     elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
     end
 
 end
@@ -2190,14 +2190,14 @@ local Icons = {
     }
 
 function Sona:LoadMenu()
-    self.shadowMenu = MenuElement({type = MENU, id = "shadowSona", name = "Shadow Sona", leftIcon = Icons.SonaIcon})
+    self.shadowMenu = MenuElement({type = MENU, id = "shadowSona", name = "Shadow Sona"})
 
     -- COMBO --
     self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-    self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-    self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = false, leftIcon = Icons.W})
-    self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
-    self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true, leftIcon = Icons.R})
+    self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = false})
+    self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
+    self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
 
     -- AUTO R --
     self.shadowMenu:MenuElement({type = MENU, id = "autor", name = "Auto R Settings"})
@@ -2212,16 +2212,16 @@ function Sona:LoadMenu()
     self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 
     if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
     elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
     end
 
     
     if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
     elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+        self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
     end
 end
 
@@ -2404,14 +2404,14 @@ local Icons = {
 
 
 function Braum:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowBraum", name = "Shadow Braum", leftIcon = Icons.BraumIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowBraum", name = "Shadow Braum"})
 
 -- COMBO --
 self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = false, leftIcon = Icons.W})
-self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true, leftIcon = Icons.R})
+self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = false})
+self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
 self.shadowMenu.combo:MenuElement({id = "userammount", name = "Activate [R] when x enemies around", value = 1, min = 1, max = 5, identifier = "#"})
 
 -- AUTO R --
@@ -2433,15 +2433,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawAutoWE", name = "Draw if auto [W
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -2644,14 +2644,14 @@ local Icons = {
 
 
 function Leona:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowLeona", name = "Shadow Leona", leftIcon = Icons.LeonaIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowLeona", name = "Shadow Leona"})
 
 -- COMBO --
 self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = false, leftIcon = Icons.W})
-self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true, leftIcon = Icons.R})
+self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = false})
+self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
 self.shadowMenu.combo:MenuElement({id = "userammount", name = "Activate [R] when x enemies hit", value = 1, min = 1, max = 5, identifier = "#"})
 
 -- AUTO R --
@@ -2668,15 +2668,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawAutoR", name = "Draw if auto [R]
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -2854,21 +2854,21 @@ local Icons = {
 
 
 function Zed:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowZed", name = "Shadow Zed", leftIcon = Icons.ZedIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowZed", name = "Shadow Zed"})
 
 -- COMBO --
 self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true, leftIcon = Icons.R})
-self.shadowMenu.combo:MenuElement({id = "userkillable", name = "Activate [R] when full combo can kill", value = true, leftIcon = Icons.R})
+self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "userkillable", name = "Activate [R] when full combo can kill", value = true})
 
 -- COMBO --
 self.shadowMenu:MenuElement({type = MENU, id = "harass", name = "Harass"})
-self.shadowMenu.harass:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.harass:MenuElement({id = "W", name = "Use W in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.harass:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
+self.shadowMenu.harass:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+self.shadowMenu.harass:MenuElement({id = "W", name = "Use W in Combo", value = true})
+self.shadowMenu.harass:MenuElement({id = "E", name = "Use E in  Combo", value = true})
 
 -- AUTO R --
 self.shadowMenu:MenuElement({type = MENU, id = "autor", name = "Auto R Settings"})
@@ -2888,15 +2888,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawRkillabletext", name = "Draw Kil
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -3155,15 +3155,15 @@ local Icons = {
 
 
 function Olaf:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowOlaf", name = "Shadow Olaf", leftIcon = Icons.OlafIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowOlaf", name = "Shadow Olaf"})
 
 -- COMBO --
 self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true, leftIcon = Icons.R})
-self.shadowMenu.combo:MenuElement({id = "userkillable", name = "Activate [R] when full combo can kill", value = true, leftIcon = Icons.R})
+self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "userkillable", name = "Activate [R] when full combo can kill", value = true})
 
 -- JUNGLE CLEAR --
 self.shadowMenu:MenuElement({type = MENU, id = "jungleclear", name = "Jungle Clear"})
@@ -3188,15 +3188,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawRkillabletext", name = "Draw Kil
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -3356,13 +3356,13 @@ local Icons = {
 
 
 function Hecarim:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowHecarim", name = "Shadow Hecarim", leftIcon = Icons.HecarimIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowHecarim", name = "Shadow Hecarim"})
 
 -- COMBO --
 self.shadowMenu:MenuElement({type = MENU, id = "combo", name = "Combo"})
-self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true, leftIcon = Icons.E})
+self.shadowMenu.combo:MenuElement({id = "Q", name = "Use Q in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "W", name = "Use W in Combo", value = true})
+self.shadowMenu.combo:MenuElement({id = "E", name = "Use E in  Combo", value = true})
 self.shadowMenu.combo:MenuElement({id = "R", name = "Use R in  Combo", value = true})
 self.shadowMenu.combo:MenuElement({id = "userkillable", name = "Activate [R] when can hit x targers", value = 1, min = 1, max = 5, identifier = "#"})
 
@@ -3384,15 +3384,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawRkillabletext", name = "Draw Kil
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -3560,28 +3560,28 @@ local Icons = {
 
 
 function Annie:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowAnnie", name = "Shadow Annie", leftIcon = Icons.AnnieIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowAnnie", name = "Shadow Annie"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qlast", name = "Use auto [Q] last hit", key = string.byte("T"), toggle = true, value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qlast", name = "Use auto [Q] last hit", key = string.byte("T"), toggle = true, value = true})
+self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true})
 
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true})
 
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.R:MenuElement({id = "Rcombostun", name = "Use [R] in Combo only if stun", value = true, leftIcon = Icons.E})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
+self.shadowMenu.R:MenuElement({id = "Rcombostun", name = "Use [R] in Combo only if stun", value = true})
 self.shadowMenu.R:MenuElement({id = "Rhitable", name = "Activate [R] when can hit x targets", value = 1, min = 1, max = 5, identifier = "#"})
 
 
@@ -3598,15 +3598,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawRkillabletext", name = "Draw Kil
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -3820,25 +3820,25 @@ local Icons = {
 
 
 function Garen:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowGaren", name = "Shadow Garen", leftIcon = Icons.GarenIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowGaren", name = "Shadow Garen"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
 
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true})
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
-self.shadowMenu.R:MenuElement({id = "Rexecute", name = "Use [R] as execute", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
+self.shadowMenu.R:MenuElement({id = "Rexecute", name = "Use [R] as execute", value = true})
 
 
 
@@ -3851,15 +3851,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Kill
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -4045,27 +4045,27 @@ local Icons = {
 
 
 function Malphite:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowMalphite", name = "Shadow Malphite", leftIcon = Icons.MalphiteIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowMalphite", name = "Shadow Malphite"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true})
 
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true})
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
 self.shadowMenu.R:MenuElement({id = "Rhitable", name = "Activate [R] when can hit x targets", value = 1, min = 1, max = 5, identifier = "#"})
-self.shadowMenu.R:MenuElement({id = "Rexecute", name = "Use [R] to execute", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rexecute", name = "Use [R] to execute", value = true})
 
 
 
@@ -4077,15 +4077,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Kill
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -4278,26 +4278,26 @@ local Icons = {
 
 
 function Chogath:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowChogath", name = "Shadow Chogath", leftIcon = Icons.ChogathIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowChogath", name = "Shadow Chogath"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true})
 
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true})
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
-self.shadowMenu.R:MenuElement({id = "Rexectue", name = "Use [R] to execute", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
+self.shadowMenu.R:MenuElement({id = "Rexectue", name = "Use [R] to execute", value = true})
 
 
 
@@ -4309,15 +4309,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Kill
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -4536,44 +4536,45 @@ local Icons = {
 
 
 function Jax:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowJax", name = "Shadow Jax", leftIcon = Icons.JaxIcon})
+self.shadowMenu = {}
+self.shadowMenu.root = MenuElement({type = MENU, id = "shadowJax", name = "Shadow Jax"})
 
 -- Q --
-self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q = self.shadowMenu.root:MenuElement({type = MENU, id = "Q1", name = "Q2"})
+self.shadowMenu.QCombo = self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.QJungle = self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true})
 
 -- W --
-self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wjungle", name = "Use [W] in Jungle Clear", value = true, leftIcon = Icons.W})
+self.shadowMenu.W = self.shadowMenu.root:MenuElement({type = MENU, id = "W", name = "W"})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wjungle", name = "Use [W] in Jungle Clear", value = true})
 -- E --
-self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true, leftIcon = Icons.E})
+self.shadowMenu.E = self.shadowMenu.root:MenuElement({type = MENU, id = "E", name = "E"})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true})
 
 -- R --
-self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
+self.shadowMenu.R = self.shadowMenu.root:MenuElement({type = MENU, id = "R", name = "R"})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
 
 
 -- DRAWING SETTINGS --
-self.shadowMenu:MenuElement({type = MENU, id = "drawings", name = "Drawing Settings"})
+self.shadowMenu.drawings = self.shadowMenu.root:MenuElement({type = MENU, id = "drawings", name = "Drawing Settings"})
 self.shadowMenu.drawings:MenuElement({id = "drawrKillable", name = "Draw Killable with [R]", value = true})
 self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Killable with full combo", value = true})
 
 -- SUMMONER SETTINGS --
-self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
+self.shadowMenu.root:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -4743,28 +4744,28 @@ local Icons = {
 
 
 function Amumu:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowAmumu", name = "Shadow Amumu", leftIcon = Icons.AmumuIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowAmumu", name = "Shadow Amumu"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true})
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wjungle", name = "Use [W] in Jungle Clear", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true})
+self.shadowMenu.W:MenuElement({id = "Wjungle", name = "Use [W] in Jungle Clear", value = true})
 
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
+self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
 self.shadowMenu.R:MenuElement({id = "Rhitable", name = "Activate [R] when can hit x targets", value = 1, min = 1, max = 5, identifier = "#"})
 
 
@@ -4777,15 +4778,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Kill
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -5005,27 +5006,27 @@ local Icons = {
 
 
 function Warwick:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowWarwick", name = "Shadow Warwick", leftIcon = Icons.WarwickIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowWarwick", name = "Shadow Warwick"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true})
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
 
 
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
+self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
 self.shadowMenu.R:MenuElement({id = "Rhitable", name = "Activate [R] when can hit x targets", value = 1, min = 1, max = 5, identifier = "#"})
 
 
@@ -5038,15 +5039,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Kill
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
@@ -5253,29 +5254,29 @@ local Icons = {
 
 
 function Gragas:LoadMenu()
-self.shadowMenu = MenuElement({type = MENU, id = "shadowGragas", name = "Shadow Gragas", leftIcon = Icons.GragasIcon})
+self.shadowMenu = MenuElement({type = MENU, id = "shadowGragas", name = "Shadow Gragas"})
 
 -- Q --
 self.shadowMenu:MenuElement({type = MENU, id = "Q", name = "Q"})
-self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true, leftIcon = Icons.Q})
-self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true, leftIcon = Icons.Q})
+self.shadowMenu.Q:MenuElement({id = "Qcombo", name = "Use [Q] in Combo", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qharass", name = "Use [Q] in Harass", value = true})
+self.shadowMenu.Q:MenuElement({id = "Qjungle", name = "Use [Q] in Jungle Clear", value = true})
 -- W --
 self.shadowMenu:MenuElement({type = MENU, id = "W", name = "W"})
-self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true, leftIcon = Icons.W})
-self.shadowMenu.W:MenuElement({id = "Wjungle", name = "Use [W] in Jungle Clear", value = true, leftIcon = Icons.W})
+self.shadowMenu.W:MenuElement({id = "Wcombo", name = "Use [W] in Combo", value = true})
+self.shadowMenu.W:MenuElement({id = "Wharass", name = "Use [W] in Harass", value = true})
+self.shadowMenu.W:MenuElement({id = "Wjungle", name = "Use [W] in Jungle Clear", value = true})
 
 -- E --
 self.shadowMenu:MenuElement({type = MENU, id = "E", name = "E"})
-self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true, leftIcon = Icons.E})
-self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true, leftIcon = Icons.E})
+self.shadowMenu.E:MenuElement({id = "Ecombo", name = "Use [E] in Combo", value = true})
+self.shadowMenu.E:MenuElement({id = "Eharass", name = "Use [E] in Harass", value = true})
+self.shadowMenu.E:MenuElement({id = "Ejungle", name = "Use [E] in Jungle Clear", value = true})
 
 -- R --
 self.shadowMenu:MenuElement({type = MENU, id = "R", name = "R"})
-self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true, leftIcon = Icons.R})
-self.shadowMenu.R:MenuElement({id = "Rexectue", name = "Use [R] to execute", value = true, leftIcon = Icons.R})
+self.shadowMenu.R:MenuElement({id = "Rcombo", name = "Use [R] in Combo", value = true})
+self.shadowMenu.R:MenuElement({id = "Rexectue", name = "Use [R] to execute", value = true})
 
 
 
@@ -5287,15 +5288,15 @@ self.shadowMenu.drawings:MenuElement({id = "drawfullKillable", name = "Draw Kill
 -- SUMMONER SETTINGS --
 self.shadowMenu:MenuElement({type = MENU, id = "SummonerSettings", name = "Summoner Settings"})
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerDot" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true, leftIcon = Icons.IGN}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseIgnite", name = "Use [Ignite] if killable?", value = true}) 
 end
 
 if myHero:GetSpellData(SUMMONER_1).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH})
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true})
 elseif myHero:GetSpellData(SUMMONER_2).name == "SummonerExhaust" then
-    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true, leftIcon = Icons.EXH}) 
+    self.shadowMenu.SummonerSettings:MenuElement({id = "UseExhaust", name = "Use [Exhaust] on engage?", value = true}) 
 end
 
 end
